@@ -3,10 +3,8 @@ package com.taniagoswami.doordash_taniagoswami.viewmodels
 import androidx.arch.core.executor.ArchTaskExecutor
 import androidx.arch.core.executor.TaskExecutor
 import com.taniagoswami.doordash_taniagoswami.DoorDashApplication
-import com.taniagoswami.doordash_taniagoswami.models.Restaurant
 import com.taniagoswami.doordash_taniagoswami.models.RestaurantDetail
 import com.taniagoswami.doordash_taniagoswami.services.IRestaurantCallback
-import com.taniagoswami.doordash_taniagoswami.services.IRestaurantsCallback
 import com.taniagoswami.doordash_taniagoswami.services.RestaurantService
 import io.mockk.every
 import io.mockk.mockk

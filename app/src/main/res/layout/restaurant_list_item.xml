@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:gravity="center_vertical">
+
+    <ImageView
+            android:id="@+id/restaurant_thumbnail"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintWidth_percent="0.3"
+            android:layout_margin="@dimen/margin_large"
+        />
+
+    <TextView
+            android:id="@+id/restaurant_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginBottom="@dimen/margin_small"
+            app:layout_constraintStart_toEndOf="@id/restaurant_thumbnail"
+            app:layout_constraintTop_toTopOf="@id/restaurant_thumbnail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            />
+
+    <TextView
+            android:id="@+id/restaurant_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkGray"
+            android:textSize="@dimen/small_text_size"
+            android:layout_margin="@dimen/margin_large"
+            app:layout_constraintTop_toBottomOf="@id/restaurant_tv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+                android:id="@+id/restaurant_description_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lightGray"
+                android:textSize="@dimen/small_text_size"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_margin="@dimen/margin_large"
+                android:layout_weight="1"
+                app:layout_constraintTop_toBottomOf="@id/restaurant_tv"
+                app:layout_constraintStart_toEndOf="@id/restaurant_thumbnail"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/restaurant_status_tv"
+                />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

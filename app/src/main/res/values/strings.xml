@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Discover</string>
+    <string name="error_title">Error</string>
+    <string name="ok">OK</string>
+    <string name="closed">Closed</string>
+    <string name="delivery_minutes">%1$d Mins</string>
+    <string name="description">Description</string>
+    <string name="delivery_time">Delivery Time</string>
+    <string name="rating">Rating</string>
+</resources>
